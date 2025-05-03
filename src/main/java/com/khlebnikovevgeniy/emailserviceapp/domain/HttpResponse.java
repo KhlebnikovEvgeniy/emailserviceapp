@@ -2,6 +2,8 @@ package com.khlebnikovevgeniy.emailserviceapp.domain;
 
 import java.util.Map;
 
+import org.springframework.http.HttpStatus;
+
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 import lombok.Data;
@@ -13,7 +15,7 @@ import lombok.experimental.SuperBuilder;
 public class HttpResponse {
 	protected String timeStamp;
 	protected int statusCode;
-	protected String httpStatus;
+	protected HttpStatus httpStatus;
 	protected String message;
 	protected String developerMessage;
 	protected String path;
